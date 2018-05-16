@@ -20,19 +20,22 @@ function init() {
     const key = e.key;
     
     
-    if (key === codes[index]) {
-      index++;
+    /* if (key === codes[index]) {
+      index++; */ 
+      
+      index = (codes[index] === key) ? ++index : 0
       
         if (index === codes.length) {
           window.alert('Congratulations! You know the Konami code!');
           
           index = 0;
         }
-    } else {
-      index = 0;
-    }
-  }
-
+    
+    })
+    
 }
+  
+
+
   
 
